@@ -1,9 +1,9 @@
-public class Tree {
+public class Tree<Tipo extends Number> {
     public Tree left;            // São as subarvores esquerda e direita
     public Tree right;
-    public int key;
+    public Tipo key;
 
-    public Tree(int k) {        // Construtor da classe
+    public Tree(Tipo k) {        // Construtor da classe
         key = k;
     }
 
@@ -12,12 +12,22 @@ public class Tree {
         caso contrario sera adicionado a subarvore da esquerda
         caso não haja subarvore entao insira no lugar da chave
     */
-    public void insert(Tree subarvore) {
-        if (subarvore.key < key) {
-            if (left != null) left.insert(subarvore);
+    public void insertDouble(Tree<Double> subarvore) {
+        if (subarvore.key < key.doubleValue()) {
+            if (left != null) left.insertDouble(subarvore);
             else left = subarvore;
         } else {
-            if (right != null) right.insert(subarvore);
+            if (right != null) right.insertDouble(subarvore);
+            else right = subarvore;
+        }
+    }
+
+    public void insertInt(Tree<Integer> subarvore) {
+        if (subarvore.key < key.intValue()) {
+            if (left != null) left.insertInt(subarvore);
+            else left = subarvore;
+        } else {
+            if (right != null) right.insertInt(subarvore);
             else right = subarvore;
         }
     }
