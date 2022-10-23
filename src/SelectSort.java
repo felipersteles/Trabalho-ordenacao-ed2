@@ -27,7 +27,7 @@ public class SelectSort<Tipo extends Number> {
 
         System.out.println("Vetor ordenado em ordem decrescente: ");
         for(int i = 0; i<vetor.length; i++){
-            System.out.println(vetor[i]);
+            System.out.print(vetor[i] + " ");
         }
     }
 }

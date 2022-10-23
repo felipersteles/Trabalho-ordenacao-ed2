@@ -53,6 +53,7 @@ interface TreeVisitor {
 
 class KeyPrinter implements TreeVisitor {
     public void visit(Tree node) {
-        System.out.println(" " + node.key);
+
+        System.out.print(node.key + " ");
     }
 };
