@@ -2,8 +2,7 @@
 
 ## Trabalho feito em java e aprensenta os seguintes algoritmos:
 
-### SelectSort
-### QuickSort
-### MergeSort
-### TreeSort
-### TreeSort
+### 😛 SelectSort
+### 🤩 QuickSort
+### 👯‍♂️ MergeSort
+### 🌳 TreeSort
